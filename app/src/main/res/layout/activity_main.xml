@@ -25,10 +25,15 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
         android:text="SegundaACTIVIDAD"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <EditText
         android:id="@+id/editText2"
@@ -41,7 +46,7 @@
         android:ems="10"
         android:hint="nombre de usuario"
         android:inputType="textPersonName"
-        android:password="true"
+        android:password="false"
         app:layout_constraintBottom_toTopOf="@+id/editText3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -59,6 +64,7 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:password="true"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
