@@ -46,4 +46,13 @@
         app:layout_constraintVertical_bias="0.792"
         app:srcCompat="@android:drawable/ic_lock_lock" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_dialog"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="59dp" />
+
 </android.support.constraint.ConstraintLayout>

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         bTn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Hola presionaste el boton", Toast.LENGTH_LONG).show();
             }
         });
 
