@@ -8,12 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
     private Button bTnSalir, bTnLogin;
     private EditText logTxt, passTxt;
-    private int counter = 5;
+    private TextView intentos;
+    private int contador = 5;
 
 
     @Override
@@ -55,6 +57,7 @@ public class Main2Activity extends AppCompatActivity {
         bTnLogin = findViewById(R.id.btnEnter);
         logTxt = findViewById(R.id.etLogin);
         passTxt = findViewById(R.id.etPass);
+        intentos = findViewById(R.id.tvIntentos);
 
         bTnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,14 +70,14 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     private void validar(String userName, String userPassword) {
-        if(userName == "Admin" && userPassword == "1234"){
+        if(userName.equals("Admin") && userPassword.equals("1234")){
             Intent logIn = new Intent(Main2Activity.this, Menu.class);
             startActivity(logIn);
             finish();
             }else{
-                counter--;
-
-                if(counter == 0){
+                contador--;
+                intentos.setText("Intentos Restantes: " + String.valueOf(contador));
+                if(contador == 0){
                     bTnLogin.setEnabled(false);
                 }
         }
