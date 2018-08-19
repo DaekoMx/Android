@@ -71,7 +71,7 @@ public class Main2Activity extends AppCompatActivity {
 
     private void validar(String userName, String userPassword) {
         if(userName.equals("Admin") && userPassword.equals("1234")){
-            Intent logIn = new Intent(Main2Activity.this, Menu.class);
+            Intent logIn = new Intent(Main2Activity.this, MenuActivity.class);
             startActivity(logIn);
             finish();
             }else{
